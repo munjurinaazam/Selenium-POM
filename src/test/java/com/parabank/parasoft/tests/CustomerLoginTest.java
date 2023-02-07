@@ -22,6 +22,7 @@ public class CustomerLoginTest extends ParaBankBaseTest {
     }
     @Test
     public void loginShouldSucceed(){
+        homepage=loginPage
         loginPage.fillUserName(getUserName());
         loginPage.fillPassword(gePassword());
         loginPage.clickLoginBtn();
